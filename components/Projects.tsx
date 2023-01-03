@@ -14,11 +14,6 @@ const Projects = () => {
         <div className="project-cards">
           <div className="project-cards-wrapper">
             <div className="card">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://cs50x.herokuapp.com"
-              >
                 <Image src={cs50x} alt="headshot" className="card-image" />
                 <div className="container">
                   <h2>
@@ -35,15 +30,9 @@ const Projects = () => {
                     for styling. Heroku for hosting.
                   </p>
                 </div>
-              </a>
             </div>
 
             <div className="card">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://googleitmiami.herokuapp.com"
-              >
                 <Image src={googleit} alt="headshot" className="card-image" />
                 <div className="container">
                   <h2>
@@ -60,7 +49,6 @@ const Projects = () => {
                     for styling. Heroku for hosting.
                   </p>
                 </div>
-              </a>
             </div>
 
             <div className="card">
