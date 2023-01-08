@@ -1,21 +1,21 @@
-/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import cs50x from '../public/images/cs50x.jpeg'
 import googleit from '../public/images/googleit.jpeg'
 import books from '../public/images/books.jpeg'
 import portfolio from '../public/images/portfolio.jpeg'
+import styles from '../styles/Home.module.css';
 
 
 const Projects = () => {
   return (
-    <section className="projects">
-        <h1 className="section-heading">Projects</h1>
-        <div className="project-cards">
-          <div className="project-cards-wrapper">
-            <div className="card">
-                <Image src={cs50x} alt="headshot" className="card-image" />
-                <div className="container">
+    <section className={styles.projects}>
+      <h1 className={styles['section-heading']}>Projects</h1>
+      <div className={styles['project-cards']}>
+        <div className={styles['project-cards-wrapper']}>
+          <div className={styles.card}>
+                <Image src={cs50x} alt="headshot" className={styles['card-image']} />
+                <div className={styles.container}>
                   <h2>
                     <b>Project 1: CS50x Website</b>
                   </h2>
@@ -32,9 +32,9 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className="card">
-                <Image src={googleit} alt="headshot" className="card-image" />
-                <div className="container">
+            <div className={styles.card}>
+                <Image src={googleit} alt="headshot" className={styles['card-image']} />
+                <div className={styles.container}>
                   <h2>
                     <b>Project 2: Google IT Website</b>
                   </h2>
@@ -51,14 +51,14 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className="card">
+            <div className={styles.card}>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.github.com/urbanobaz/booksv2"
               >
-                <Image src={books} alt="headshot" className="card-image" />
-                <div className="container">
+                <Image src={books} alt="headshot" className={styles['card-image']} />
+                <div className={styles.container}>
                   <h2>
                     <b>Project 3: Books & More</b>
                   </h2>
@@ -75,7 +75,7 @@ const Projects = () => {
               </a>
             </div>
 
-            <div className="card">
+            <div className={styles.card}>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -84,9 +84,9 @@ const Projects = () => {
                 <Image
                   src={portfolio}
                   alt="headshot"
-                  className="card-image"
+                  className={styles['card-image']}
                 />
-                <div className="container">
+                <div className={styles.container}>
                   <h2>
                     <b>Project 4: Portfolio Page</b>
                   </h2>

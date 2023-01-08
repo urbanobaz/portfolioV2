@@ -6,17 +6,15 @@ import styles from '../styles/Home.module.css'
 const Main = () => {
 return (<div className={styles.content}>
         <aside className={styles.side}>
-          <figure id="picture" className={styles.picture}>
-            <div className={styles['picture-shadow']} />
+          {/* <figure id="picture" className={styles.picture}>
+            <div className={styles['picture-shadow']} /> */}
             <Image
               id="pictureImage"
               className={styles['picture-image']}
               src={headshot}
               alt="Portrait of Urbano Baz"
-              width="400"
-              height="400"
             />
-          </figure>
+          {/* </figure> */}
         </aside>
         <main className={styles.about}>
           <h1 className={styles.name}>Hi, I'm Urbano Baz</h1>
@@ -35,17 +33,17 @@ return (<div className={styles.content}>
           </div>
           <ul className={styles.social} id="social">
             <li>
-              <a href="https://twitter.com/ubaz_3">
+              <a className={styles.link} href="https://twitter.com/ubaz_3">
                 <i className="fab fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="https://github.com/urbanobaz">
+              <a className={styles.link} href="https://github.com/urbanobaz">
                 <i className="fab fa-github"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/urbanobaz">
+              <a className={styles.link} href="https://www.linkedin.com/in/urbanobaz">
                 <i className="fab fa-linkedin"></i>
               </a>
             </li>

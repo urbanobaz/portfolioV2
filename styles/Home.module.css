@@ -1,14 +1,50 @@
+.html {
+  background-color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  min-height: 100vh;
+  min-width: 300px;
+  overflow-x: hidden;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.body {
+  margin: 0;
+}
+
+.link {
+  color: currentColor;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 /* 2. Shared */
 
 .wallpaper,
-.picture-shadow,
-.picture-image {
+.picture-shadow {
   display: block;
   height: 100%;
   left: 0;
   top: 0;
   width: 100%;
-  border-radius: 50%;
+}
+
+.picture-image {
+  display: block;
+  height: 400px;
+  top: 0;
+  left: 0;
+  width: 400px;
+  border-radius: 290486px;
+  opacity: 1;
+}
+
+.side {
+  display: flex;
+  justify-content: center;
 }
 
 .job,
@@ -56,18 +92,13 @@
   width: 100%;
 }
 
-.picture-shadow {
+/* .picture-shadow {
+  border-radius: 290486px;
   background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%);
   position: absolute;
   top: 10%;
   opacity: 1;
-}
-
-.picture-image {
-  /* border-radius: 290486px; */
-  position: absolute;
-  opacity: 1;
-}
+} */
 
 .about {
   max-width: 26rem;
@@ -148,7 +179,7 @@
   width: 2rem;
 }
 
-.social a {
+.social .link {
   align-items: center;
   display: flex;
   font-size: 2rem;
@@ -161,12 +192,12 @@
   text-decoration: none;
 }
 
-.social a:hover {
+.social .link:hover {
   opacity: 1;
   transform: scale(1.25);
 }
 
-.social a:active {
+.social .link:active {
   opacity: 1;
   transform: scale(1.1);
 }
@@ -176,6 +207,7 @@
   color: #000;
   text-align: center;
   margin-left: -2rem;
+  margin-bottom: 10px;
 }
 
 .projects {
@@ -186,22 +218,19 @@
 .project-cards {
   display: flex;
   justify-content: center;
-}
-
-.project-cards-wrapper {
-  display: flex;
-  justify-content: center;
-  width: 1200px;
   flex-wrap: wrap;
 }
 
 .card {
+  /* Add shadows to create the "card" effect */
+  border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 500px;
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
-  margin: 1rem 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
   transition-property: transform;
   will-change: transform;
 }
@@ -217,6 +246,11 @@
   transition: 0.1s;
 }
 
+.link:hover {
+  transform: scale(1.25);
+  transition: 0.1s;
+}
+
 /* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
@@ -224,6 +258,7 @@
 
 .card-image {
   width: 100%;
+  height: 450px;
 }
 
 .link-container {
@@ -292,6 +327,7 @@
     justify-content: center;
     justify-items: center;
     width: 87%;
+    height: 100%;
   }
 
   .description {
@@ -324,7 +360,6 @@
   }
 
   .side {
-    margin-bottom: 3rem;
     width: 100%;
     max-height: 400px;
     max-width: 400px;
@@ -362,6 +397,24 @@
 }
 
 @media screen and (max-width: 500px) {
+  #pictureImage {
+    height: 250px;
+    width: 250px;
+  }
+
+  /* .picture-image {
+    display: block;
+    left: 0;
+    border-radius: 290486px;
+    position: absolute;
+    opacity: 1;
+  } */
+
+  #picture {
+    height: 250px;
+    width: 250px;
+  }
+
   .main-button {
     width: 100%;
   }
@@ -369,6 +422,8 @@
   .card {
     width: 85%;
     padding-bottom: 2rem;
+    margin: 0;
+    margin-bottom: 30px;
   }
 
   .content {
@@ -398,7 +453,9 @@
     margin-left: 0;
     order: 2;
     width: 400px;
-    height: 400px;
+    /* height: 250px; */
+    display: flex;
+    justify-content: center;
   }
 
   .about {
