@@ -397,22 +397,15 @@
 }
 
 @media screen and (max-width: 500px) {
-  #pictureImage {
+  .picture-image {
     height: 250px;
     width: 250px;
+    margin-bottom: 30px;
   }
 
-  /* .picture-image {
-    display: block;
-    left: 0;
-    border-radius: 290486px;
-    position: absolute;
-    opacity: 1;
-  } */
-
-  #picture {
-    height: 250px;
-    width: 250px;
+  .contact {
+    display: flex;
+    justify-content: center;
   }
 
   .main-button {
