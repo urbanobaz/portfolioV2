@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import headshot from "../public/finalheadshotedit.png";
 import styles from "../styles/Home.module.css";
