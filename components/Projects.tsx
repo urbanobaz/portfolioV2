@@ -12,7 +12,7 @@ const Projects = () => {
     <section className={styles.projects}>
       <h1 className={styles['section-heading']}>Projects</h1>
       <div className={styles['project-cards']}>
-        {/* <div className={styles['project-cards-wrapper']}> */}
+        <div className={styles['project-cards-wrapper']}>
           <div className={styles.card}>
                 <Image src={cs50x} alt="headshot" className={styles['card-image']} />
                 <div className={styles.container}>
@@ -105,7 +105,7 @@ const Projects = () => {
             {/* {projects.map((project, index) => {
             return <Card props={project} key={index} />
           })} */}
-          {/* </div> */}
+          </div>
         </div>
       </section>
   );

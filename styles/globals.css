@@ -104,7 +104,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: currentColor;
   cursor: pointer;
   text-decoration: none;
 }
