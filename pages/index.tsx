@@ -1,10 +1,11 @@
-import Head from 'next/head'
-import { Quicksand } from '@next/font/google'
-import Main from '../components/Main'
-import Projects from '../components/Projects'
+/* eslint-disable @next/next/no-page-custom-font */
+/* eslint-disable react/no-unescaped-entities */
+import Head from "next/head";
+import { Quicksand } from "@next/font/google";
+import Main from "../components/Main";
+import Projects from "../components/Projects";
 
-
-const quicksand = Quicksand({ subsets: ['latin'] })
+const quicksand = Quicksand({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -19,5 +20,5 @@ export default function Home() {
         <Projects />
       </main>
     </>
-  )
+  );
 }
