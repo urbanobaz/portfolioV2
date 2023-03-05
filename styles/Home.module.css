@@ -48,7 +48,7 @@
   color: #fff;
   display: flex;
   position: relative;
-  min-height: 100vh;
+  min-height: cal(100vh - 96px);
   padding: 0 4rem;
   background-image: linear-gradient(
     to bottom right,
@@ -376,6 +376,11 @@
 
   .card-image {
     height: 350px;
+  }
+
+  .project-card-wrapper {
+    display: flex;
+    justify-content: center;
   }
 }
 
