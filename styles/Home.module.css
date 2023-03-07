@@ -288,7 +288,8 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
-    padding: 0 3rem;
+    padding: 48px 0;
+    min-height: 100vh;
   }
 
   .contact {
@@ -412,7 +413,8 @@
   .content {
     align-items: center;
     justify-content: space-evenly;
-    padding: 0rem;
+    padding: 48px 0;
+    min-height: 100vh;
   }
 
   .side {
@@ -421,7 +423,6 @@
     margin-left: 0;
     order: 2;
     width: 400px;
-    /* height: 250px; */
     gap: 20px;
     display: flex;
     justify-content: center;
@@ -430,5 +431,10 @@
   .about {
     flex-grow: 1;
     flex-shrink: 1;
+  }
+
+  .card {
+    margin: 20px 30px;
+    min-height: 700px;
   }
 }
